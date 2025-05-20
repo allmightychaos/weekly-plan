@@ -1,12 +1,18 @@
-# React + Vite
+# Wochenplan
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Eine Web-App zur Anzeige und Verwaltung des Wochenplans.
 
-Currently, two official plugins are available:
+## Roadmap
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- [X] Projekt erstellen & initialisieren  
+- [X] README mit Roadmap hinzufügen  
+- [ ] Grundlegende Tabellenskelettstruktur  
+- [ ] Responsives Layout (Desktop & Mobile)  
+- [ ] Spalte "Wir": F → Blau, W → Grün  
+- [ ] Navigation: `<`, Neue Woche, `>`  
+- [ ] Stundenplan-Integration (JSON/iCal)  
+- [ ] Login via `.env`-Passwort  
+- [ ] Stunden-Berechnung implementieren  
+- [ ] UI-Feinschliff (Dark/Light, Apple-Style)  
+- [ ] Testing & Bugfixes  
+- [ ] 🚀 Release  
