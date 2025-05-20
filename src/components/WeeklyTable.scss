@@ -1,0 +1,108 @@
+/* src/components/WeeklyTable.scss */
+
+.weekly-table-container {
+    width: 100%;
+    overflow-x: auto;
+    display: flex;
+    justify-content: center;
+}
+
+.weekly-table {
+    border-collapse: collapse;
+    min-width: 800px;
+    /* dicker Außenborder */
+    border: 2px solid #ccc;
+}
+
+.weekly-table th,
+.weekly-table td {
+    /* dünne Innenlinien */
+    border: 1px solid #ccc;
+    padding: 8px;
+    text-align: center;
+}
+
+
+/* Header-Background */
+
+.weekly-table thead th {
+    background-color: #444;
+    color: #fff;
+}
+
+
+/* Erste Header-Zelle (Datum) normal waagrecht */
+
+.weekly-table thead th.header-first {
+    writing-mode: horizontal-tb;
+}
+
+
+/* fette Gruppierungslinien */
+
+
+/* 1) Zwischen Spalte 1 (Datum) und dem Rest */
+
+.weekly-table th:nth-child(1),
+.weekly-table td:nth-child(1) {
+    border-right: 2px solid #ccc;
+}
+
+
+/* 2) Rund um Isa + Jürgen */
+
+.weekly-table th:nth-child(3),
+.weekly-table td:nth-child(3) {
+    border-left: 2px solid #ccc;
+}
+
+.weekly-table th:nth-child(4),
+.weekly-table td:nth-child(4) {
+    border-right: 2px solid #ccc;
+}
+
+
+/* 3) Rund um beide Schule (Sam Schule + Elina Schule) */
+
+.weekly-table th:nth-child(5),
+.weekly-table td:nth-child(5) {
+    border-left: 2px solid #ccc;
+}
+
+.weekly-table th:nth-child(6),
+.weekly-table td:nth-child(6) {
+    border-right: 2px solid #ccc;
+}
+
+
+/* 4) Rund um Wir (Spalte 7) */
+
+.weekly-table th:nth-child(7),
+.weekly-table td:nth-child(7) {
+    border-left: 2px solid #ccc;
+    border-right: 2px solid #ccc;
+}
+
+
+/* 5) Rund um Notiz (Spalte 8) */
+
+.weekly-table th:nth-child(8),
+.weekly-table td:nth-child(8) {
+    border-left: 2px solid #ccc;
+}
+
+
+/* Zeilenlabels */
+
+.row-label {
+    font-weight: bold;
+    background-color: rgba(68, 68, 68, 0.24);
+    color: #fff;
+}
+
+
+/* Notiz-Zeile doppelt so hoch (6. Zeile im tbody) */
+
+.weekly-table tbody tr:nth-child(6) td {
+    height: 70px;
+}
